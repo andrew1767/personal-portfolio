@@ -1,27 +1,42 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500");
+
+
 html {
-    --font-size: 30px;
+    --font-size: 20px;
 }
 
 * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: purple;
+    background-color: gold;
     font-size: var(--font-size);
+    font-family: "Monoserrat", sans-serif;
 }
 
 /* Start of Navigation */
 
 nav {
-    margin: 0 auto;
-    width: fit-content;
-}
-
-ul {
-    list-style-type: none;
     display: flex;
+    width: 100%;
+    justify-content: space-between;
+
 }
 
-li {
-    flex-direction: column;
-    /* margin-left: auto; */
+nav a {
+    margin: auto 0;
 }
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav li {
+    padding: 10px;
+}
+
 
 a {
     text-decoration: none;
