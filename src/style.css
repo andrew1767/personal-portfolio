@@ -3,7 +3,9 @@
 
 html {
     --font-size: 20px;
+   
 }
+
 
 * {
     box-sizing: border-box;
@@ -15,13 +17,32 @@ html {
     font-family: "Monoserrat", sans-serif;
 }
 
+.content {
+    height: 100vh;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.temp-left {
+    position: fixed;
+    bottom: 0;
+    width: 40px;
+    padding-left: 10px;
+}
+
+.temp-left ul{
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
 /* Start of Navigation */
 
 nav {
+    position: fixed;
     display: flex;
     width: 100%;
     justify-content: space-between;
-
 }
 
 nav a {
@@ -44,3 +65,22 @@ a {
 }
 
 /* End of Navigation */
+
+/* Start of Cover Page */
+
+.cover-page {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cover-content h1{
+    font-size: clamp(40px, 8vw, 80px);
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 768px) {
+    
+}
