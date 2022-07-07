@@ -1,9 +1,12 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:500");
-
-
 html {
-    --font-size: 20px;
-   
+    --font-size: 20px;   
+}
+
+
+body {
+    line-height: 1.7;
+    font-size: var(--font-size);
+    color: purple;
 }
 
 
@@ -11,15 +14,11 @@ html {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    color: purple;
-    background-color: gold;
-    font-size: var(--font-size);
-    font-family: "Monoserrat", sans-serif;
 }
 
 .content {
     height: 100vh;
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
 }
 
@@ -43,6 +42,7 @@ nav {
     display: flex;
     width: 100%;
     justify-content: space-between;
+    background-color: rgba(255, 255, 255, .9);
 }
 
 nav a {
@@ -77,6 +77,34 @@ a {
 
 .cover-content h1{
     font-size: clamp(40px, 8vw, 80px);
+}
+
+
+/* About me */
+
+
+/* Projects */
+
+.project-item {
+    display: flex;
+}
+
+.project-tools ul {
+    list-style-type: none;
+    display: inline;
+}
+
+.project-tools li {
+    padding-left: 10px;
+    display: inline;
+}
+
+.project-tools p {
+    display: inline;
+}
+
+.reverse {
+    flex-direction: row-reverse;
 }
 
 /* Media Queries */
